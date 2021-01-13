@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Of lucky draw </title>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "vikassaran100@gmail.com",
+                Password: "vvvVVV123",
+                To: 'saranvikas80@gmail.com',
+                From: "vikassaran100@gmail.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="container" style='border: 3px solid black;background-color: aqua'>
+        <h1 style="text-align:center;">Please Fill the the form to participate to the lucky draw:</h1>
+        <hr>
+        <div>
+            <form action="https://formspree.io/f/xdopybnj" method="POST">
+                <div class="container" style="float: center; text-align: center;">
+                    <label style="font-size:22px">Name:</label><br>
+                    <input style="border: 2px solid black; width: 400px; height: 40px; border-radius: 7px;" type="text"
+                        id='name'  name="_replyto" placeholder="Enter your Name"><br><br>
+
+                </div>
+                <div style="float: center; text-align: center;">
+                    <label style="font-size:22px">Father's Name:</label><br>
+                    <input style="border: 2px solid black; width: 400px; height: 40px; border-radius: 7px;" type="text"
+                        id='name'  name="_replyto" placeholder="Enter your Father's Name"><br><br>
+
+                </div>
+                <div style="float: center; text-align: center;">
+                    <label style="font-size:22px">Mother's Name:</label><br>
+                    <input style="border: 2px solid black; width: 400px; height: 40px; border-radius: 7px;" type="text"
+                        id='name'  placeholder="Enter your mother's Name"  name="_replyto"><br><br>
+
+                </div>
+                <div style="float: center; text-align: center;">
+                    <label style="font-size:22px">Phone Number:</label><br>
+                    <input type="number" id='phone' name="phone" placeholder="Enter your Mobile Number"
+                        style="border: 2px solid black; width: 400px; height: 40px; border-radius: 7px;">
+
+                </div>
+                <button style="    border: 2px solid black;
+                width: 100px;
+                margin-left: 1045px;
+                margin-top:10px;
+                margin-bottom: 29px;
+                height: 45px;
+                border-radius: 19px;
+                position: absolute;
+                background: coral" type="submit" value="Send"
+         id="submit" name="submit"
+                    >Submit</button><br><br>
+                <hr>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
